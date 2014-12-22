@@ -18,6 +18,14 @@ public class Ship : MonoBehaviour {
 	velocity. We will use this to control the velocity of our ship. */
 	private Vector2 velocity;
 
+	void OnCollisionEnter2D ( Collision2D collider ) {
+
+		//need to fix this so game don't lag on death.
+		if (collider.gameObject.name.Contains ( "Alien1" ) ) {
+			Destroy ( gameObject );
+		}
+	}
+
 	// On every frame while the game is running.
 	void Update () {
 

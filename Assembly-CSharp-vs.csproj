@@ -5,11 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-<<<<<<< HEAD
-	<ProjectGuid>{FA9148FB-188B-74E8-705C-BE955A46D7B9}</ProjectGuid>
-=======
-	<ProjectGuid>{8F6CC4C8-4216-9653-B4FA-18259B6467B6}</ProjectGuid>
->>>>>>> Space_Wars/master
+	<ProjectGuid>{1EDDDE3E-A07F-0F07-CEFA-3530086441CF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,14 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
      <Compile Include="Assets\Bullets.cs" />
+     <Compile Include="Assets\Enemies.cs" />
+     <Compile Include="Assets\Enemy.cs" />
      <Compile Include="Assets\Follow.cs" />
      <Compile Include="Assets\Gun.cs" />
-=======
-     <Compile Include="Assets\Follow.cs" />
->>>>>>> Space_Wars/master
      <Compile Include="Assets\Ship.cs" />
+     <Compile Include="Assets\alien1.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

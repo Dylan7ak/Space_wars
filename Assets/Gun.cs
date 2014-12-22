@@ -24,6 +24,16 @@ public class Gun : MonoBehaviour {
 	void Update () {
 		//if (Input.GetKey ( KeyCode.Space ) ) {
 
+		/* Converts mouse pixel position to world
+		position using camra. */
+		Vector2 mouseWorld = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+
+		// Calculates direction from gun to mouse position.
+		Vector2 direction = mouseWorld - ( Vector2 )transform.position;
+
+		// Sets the direction of the gun to our calculated direction.
+		transform.up = direction;
+
 
 		// We will use a timer to set the fire rate.
 		fireTime -= Time.deltaTime;
